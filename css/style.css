@@ -1,0 +1,21 @@
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+.header-container {
+    background-color: tomato;
+}
+
+.nav-bar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* fonts for later
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;    
+*/
+
+.card {
+    box-shadow: (5px 10px 8px);
+}
