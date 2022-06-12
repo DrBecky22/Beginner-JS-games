@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- styles css and bootstrap -->
-  <link rel="stylesheet" href="style.css">
-  <title>Bootstrap Site</title>
+  <title>Fun with Basic JavaScript</title>
+
+  <!-- styles bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  
+
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,46 +18,74 @@
 
   <!-- icons emojis favicons -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- custom styles -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header id="header-container">
-<!-- <nav class="nav-bar">
-    <a href="" class="menu-item menu-item1">Time Left Calculator</a>
-    <a href="" class="menu-item menu-item2">Love Calculator</a>
-    <a href="" class="menu-item menu-item3">BMI Calculator</a>
-    <a href="" class="menu-item menu-item4"></a>
-</nav> -->
+                <!-- <nav class="navbar">
+                    <a href="" class="menu-item menu-item1">Time Left Calculator</a>
+                    <a href="" class="menu-item menu-item2">Love Calculator</a>
+                    <a href="" class="menu-item menu-item3">BMI Calculator</a>
+                    <a href="" class="menu-item menu-item4"></a>
+                </nav> -->
 
-<h1>"Fun" with <em>really</em> basic Javascript</h1>
-<h2>Becky's First Forays into all new ways to waste time</h2>
-</header>
+        <h1 class="site-header-big-words">"Fun" with <em>really</em> basic Javascript</h1>
+        <h2 class="site-header-tag-line">Becky's Coding Adventure part 4: with new & improved ways to waste time</h2>
+    </header>
 
-<div class="container-fluid">
+<div class="container-fluid card-section">
+    <!-- <video id="background-video" autoplay loop muted poster="images/ink.Vid.mp4">
+        <source src="images/ink.Vid.mp4" type="video/mp4"> -->
+    </video>
+    <h2 class="card-section-heading">Pick a "game" below to test out my code!</h2>
 
-<div class="card-deck">
-    <div class="card">
-        <img class="card-img-top" src="holder.js/100x180/" alt="">
-        <div class="card-body">
-            <h4 class="card-title">Life Calculator</h4>
-            <p class="card-text">Text</p>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <img class="header" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Life Calculator</h4>
+                    <p class="card-text">Find out how many days, weeks and months you have left before you are 90</p>
+                    <button type="text/javascript" class="btn btn-success btn-lg" src="scripts.js">Play</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+            <div class="card">
+                <img class="header" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Love Calculator</h4>
+                    <p class="card-text">scope out your love connection</p>
+                    <button type="text/javascript" class="btn btn-success btn-lg" src="scripts.js">Play</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+            <div class="card">
+                <img class="header" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">BMI Calculator</h4>
+                    <p class="card-text">find out how fat the AMA thinks you are with no consideration of your muscle mass</p>
+                    <button type="text/javascript" class="btn btn-success btn-lg" src="scripts.js">Play</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img class="card-img-top" src="holder.js/100x180/" alt="">
-        <div class="card-body">
-            <h4 class="card-title">Love Calculator</h4>
-            <p class="card-text">Text</p>
-        </div>
-    </div>
-</div>
 
 </div>
+
+<div class="container-3">Not sure What will go in this section</div>
 
 <!-- font awseome iconts for later -->
-<i class="fa-solid fa-hourglass-clock"></i>
+<!-- <i class="fa-solid fa-hourglass-clock"></i>
 <i class="fa-solid fa-face-smile-hearts"></i>
 <i class="fa-solid fa-weight-scale"></i>
+<i class="fa-solid fa-notes-medical"></i> -->
 
 </body>
 

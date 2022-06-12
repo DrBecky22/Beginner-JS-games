@@ -9,6 +9,7 @@ alert ("Ok, " + name + " you have " + days + ", " + weeks + ", and " + months + 
 
 
 // Love Calculator
+function loveCalculator {
 prompt ("what is your name");
 prompt ("what is your intended's name?");
 
@@ -26,6 +27,6 @@ if (loveScore >30 && loveScore <=69) {
 if (loveScore <30) {
     alert ("boo!  your love score is " +loveScore+ "%, you should walk away and cut your losses");
 }
-
+}
 
 // BMI Calculator
