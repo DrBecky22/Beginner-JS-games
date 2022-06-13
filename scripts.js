@@ -30,3 +30,39 @@ if (loveScore <30) {
 }
 
 // BMI Calculator
+// var height = prompt ("what is your weight in kg? For you Imperials, there are 2.2 lbs in one kg");
+// var weight = prompt ("What is your height in meters?  For you Obsolete Imperials, there are 3.3 feet in 1 meter");
+
+function bmiCalculator(weight, height) {
+    var bmi = weight / Math.pow(height, 2);  
+    if (Math.round (bmi<18.5)) 
+       return ("your BMI is " +bmi+ ", so you are underweight.");
+    if (Math.round (bmi >=18.5 && bmi<=24.9))
+       return ("your BMI is " +bmi+ ", so you have a normal weight.");
+    if (Math.round (bmi >24.9)) 
+       return ("your BMI is " +bmi+ ", so you are overweight.");
+}
+ bmiCalculator(65, 1.8);
+
+
+//  Leap Year Calculator
+if (year%4 === 0) {
+    if (year%100===0) {
+        if (year%400===0) {
+            return "Leap year.";
+        } else {
+            return "Not leap year.";
+        }
+    return "Not leap year.";
+    } else {
+        return "Leap year.";
+    }
+    return "Leap year.";
+} else {
+    return "Not leap year."
+}
+
+
+// alert ("your BMI is " +bmi+ ", so you are underweight.");
+// alert ("your BMI is " +bmi+ ", so you have a normal weight.");
+// alert ("your BMI is " +bmi+ ", so you are overweight.");
