@@ -1,0 +1,22 @@
+{
+  "name": "beginner-games",
+  "version": "1.0.0",
+  "description": "first attempt at deploying js apps on a live server",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrBecky22/Beginner-JS-games.git"
+  },
+  "author": "Becky Andrews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrBecky22/Beginner-JS-games/issues"
+  },
+  "homepage": "https://github.com/DrBecky22/Beginner-JS-games#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

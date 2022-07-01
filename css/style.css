@@ -39,9 +39,9 @@ font-family: 'Roboto Slab', serif;
     box-shadow: 3px 5px 8px rgb(106, 106, 201);
 }
 
-.card-header-title {
+/* .card-header-title {} */
     
-}
+
 .btn {
     box-shadow: 2px 3px 5px rgb(106, 106, 201);
 }

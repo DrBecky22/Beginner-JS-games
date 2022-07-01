@@ -1,3 +1,6 @@
+const express = require ('express')
+const app = express()
+
 // Time Left Calculator
 var name = prompt ("What is your name");
 var ageYears = prompt ("Hi, " + name + "! If you tell me your age in years, I will tell you how many days, weeks and months left until your 90th birthday.  Please list your age in years below.");
@@ -9,7 +12,7 @@ alert ("Ok, " + name + " you have " + days + ", " + weeks + ", and " + months + 
 
 
 // Love Calculator
-function loveCalculator {
+function loveCalculator () {
 prompt ("what is your name");
 prompt ("what is your intended's name?");
 
