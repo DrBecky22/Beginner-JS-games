@@ -1,7 +1,60 @@
+// ///////////////Snuffy Code /////////////////
+function colorChange() {
+    // alert("you made it to ColorChange!")
+    document.getElementById('snuffy-section-title').style.color='RebeccaPurple';
+    return false;
+}
+
+function colorBack() {
+    document.getElementById('snuffy-section-title').style.color='mediumturquoise';
+}
+
+function fallClock() {
+    console.log(document.getElementById('snuffyPicStart').style.transform)
+    currentDeg += 90
+    // currentDeg = currentDeg + 90
+    document.getElementById('snuffyPicStart').style.transform = `rotate(${currentDeg}deg)`;
+}
+
+function fallWidder() {
+    document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
+}
+
+function spinClock() {
+    console.log('spinClock')
+    document.getElementById('snuffyPicStart').classList.add('rotate-clock');
+}
+
+function spinWidder() {
+    document.getElementById('snuffyPicStart').classList.add('rotate-widd');
+}
+
+
+function snuffyStyleScared() {
+    alert('confused button!');
+    document.getElementById('snuffyPicStart').src = 'images/elephantScared.png';
+}
+
+function snuffyStyleBlue() {
+    alert('you took the blue pill');
+    document.getElementById('snuffyPicStart').src = 'images/elephantBlue.png';
+}
+
+function snuffyStylePaisley() {
+    alert("It's your birthday!");
+    document.getElementById('snuffyPicStart').src = 'images/elephantPaisley.png';
+
+
+
+
+////////// not sure what these go to ///////////////////////
 const express = require ('express')
 const app = express()
 
 // Time Left Calculator //
+const timeBtn = document.querySelector("#TimeCalc-btn");
+const timeClick = timeBtn.addEventListener('click', timeCalculator);
+
 function timeCalculator(){
     let name = prompt ("What is your name?");
     let ageYears = prompt ("Hi, " + name + "! If you tell me your age in years, I will tell you how many days, weeks and months left until your 90th birthday.  Please list your age in years below.");
@@ -69,8 +122,15 @@ if (year%4 === 0) {
 } else {
     return "Not leap year."
 }
+}
 
 
 // alert ("your BMI is " +bmi+ ", so you are underweight.");
 // alert ("your BMI is " +bmi+ ", so you have a normal weight.");
 // alert ("your BMI is " +bmi+ ", so you are overweight.");
+
+// Color Changing Text
+function changeColor(color) {
+    let clrText = document.querySelector("#colorText");
+    clrText.style.color = color;
+}

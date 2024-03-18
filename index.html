@@ -35,24 +35,78 @@
                     <a href="" class="menu-item menu-item4"></a>
                 </nav> -->
 
-        <h1 class="site-header-big-words">"Fun" with <em>really</em> basic Javascript</h1>
+        <h1 class="site-header-big-words">"Fun" with <em>Vanilla</em> Javascript</h1>
         <h2 class="site-header-tag-line">Dr. Becky's Coding Adventure part 4: with new & improved ways to waste time</h2>
     </header>
 
-<div class="container-fluid card-section">
+    <div id="Sunffy-Container">
+        <h1 id="snuffy-section-title" onmouseover="colorChange()" onmouseout="colorBack()">This is Snuffy</h1>
+        <div class="snuffy">
+            <img id="snuffyPicStart" src="images/snuffyMain.svg" alt="Cute Elephant">            
+            <!-- <img id="snuffyPicStart" src="elephantBlue.png" alt=""> -->
+        </div>
+    </div>
+
+<div class="container-fluid card-section" id="snuffy-cards">
     <!-- <video id="background-video" autoplay loop muted poster="images/ink.Vid.mp4">
         <source src="images/ink.Vid.mp4" type="video/mp4"> -->
     </video>
-    <h2 class="card-section-heading">Pick a "game" below to test out my code!</h2>
-
-
+    <h3 id="snuf-subtitle">Some Words about Snuffy</h3>
+    <p>This is Snuffy. Snuffy is an adorable and magical creature that has many moods and can do many things. Explore all Snuffy can do by clicking the buttons below.</p></h2>
 
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
+            <div class="card" id="Snuffycard1">
                 <div class="card-header">
-                    <div class="card-header-title"><h4>Time Calculator</h4></div>
-                    <img class="card-header-img" src="https://www.fillmurray.com/200/150" alt="Bill">  
+                    <div class="card-header-title"><h4 class="card-title">Falling for Snuffy</h4></div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">You spin me right round baby right round, like a record baby... click below to get Sunffy to spin or fall over.... oooohhhhh.</p>
+                    <button class="btn btn-primary" id="fallClock">Fall Right</button>
+                    <button class="btn btn-primary" onclick="fallWidder()">Fall Left</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" id="Snuffycard2">
+                <div class="card-header">
+                    <div class="card-header-title"><h4 class="card-title">Snuffy Moods</h4></div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Click the button to show Snuffy's other personalities. For extra fun, change the color <em>then</em> click a spin button. oooohhhhh.</p>
+                    <button class="btn btn-primary" onclick="snuffyStyleScared()">Confused</button>
+                    <button class="btn btn-primary" onclick="snuffyStyleBlue()">Blue</button>
+                    <button class="btn btn-primary" onclick="snuffyStylePaisley()">PartyPants</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" id="Snuffycard3">
+                <div class="card-header">
+                    <div class="card-header-title"><h4 class="card-title">Spinning Snuffy</h4></div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Click the button to show Snuffy's other personalities. For extra fun, change the color <em>then</em> click a spin button. oooohhhhh.</p>
+                    <button class="btn btn-primary" onclick="spinClock()">Spin Clockwise</button>
+                    <button class="btn btn-primary" onclick="spinWidder()">Spin Widdershins</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid card-section" id="game-cards">
+    <h2 class="card-section-heading">Snuffy invites you to pick a "game" below to test out my new JavaScript Skills!</h2>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" id="card1">
+                <div class="card-header">
+                    <div class="card-header-title"><h4 class="card-title">Time Calculator</h4></div>
+                    <img class="card-header-img" src="https://loremflickr.com/200/150/clock" alt="Bill">  
                 </div>
                 <div class="card-body">
                     <p class="card-text">Find out how many days, weeks and months you have left before you get to your 90th year</p>
@@ -62,16 +116,16 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12">   
-            <div class="card">
+            <div class="card" id="card2">
                 <div class="card-header">
-                    <div class="card-header-title"><h4>Love Calculator</h4></div>
+                    <div class="card-header-title"><h4 class="card-title">Love Calculator</h4></div>
                     <img class="card-header-img" src="https://placekeanu.com/200x150/" alt="">
                 </div>
                 <div class="card-body">
                     <p class="card-text">Scope out your love connection! Just how compatible is the object of your desire?</p>
                     <button type="text/javascript" id="LoveCalc-btn" class="btn btn-success btn-lg btn-love" src="scripts.js" onclick="LoveCalculator()">Play
                   
-                      <script src="path/to/my/script.js"></script>
+                      <!-- <script src="path/to/my/script.js"></script> -->
                   
                   </button>
                 </div>
@@ -79,10 +133,10 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12">   
-            <div class="card">
+            <div class="card" id="card3">
                 <div class="card-header">
-                    <div class="card-header-title"><h4>BMI Calculator</h4></div>
-                    <img class="card-header-img" src="https://www.placecage.com/200/150" alt="">
+                    <div class="card-header-title"><h4 class="card-title">BMI Calculator</h4></div>
+                    <img class="card-header-img" src="https://loremflickr.com/200/150/food" alt="">
                 </div>
                 <div class="card-body">
                     <p class="card-text">find out how fat the AMA thinks you are with no consideration of your muscle mass</p>
@@ -90,22 +144,65 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+            <div class="card" id="card4">
+                <div class="card-header">
+                    <div class="card-header-title" id="colorText"><h4 class="card-title">Color Changing Text</h4></div>
+                    <img class="card-header-img" src="https://loremflickr.com/200/150/rainbow" alt="">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Click the buttons to see the title text above change</p>
+                    <button class="btn btn-lg blue" onclick="changeColor('blue')" class="blue">Blue</button>
+                    <button class="btn btn-lg green" onclick="changeColor('green')" class="green">Green</button>
+                    <button class="btn btn-lg orange" onclick="changeColor('orange')" class="orange">Orange</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+            <div class="card" id="card5">
+                <div class="card-header">
+                    <div class="card-header-title"><h4 class="card-title">Recipe Finder</h4></div>
+                    <img class="card-header-img" src="https://loremflickr.com/200/150/mountain" alt="">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Click the buttons below to see all the things Snuffy can do</p>
+                    <button type="text/javascript" id="BMI-calc-btn" class="btn btn-success btn-lg btn-bmi" src="scripts.js">Play</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+            <div class="card" id="card6">
+                <div class="card-header">
+                    <div class="card-header-title"><h4 class="card-title">Dice Game</h4></div>
+                    <img class="card-header-img" src="https://loremflickr.com/200/150/dice" alt="">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Roll the Dice and see what happens</p>
+                    <button type="text/javascript" id="BMI-calc-btn" class="btn btn-success btn-lg btn-bmi" src="scripts.js">Play</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </div>
 
 
-<div class="container-3" id="colorButtonTestArea">
+<!-- <div class="container-3" id="colorButtonTestArea">
     <h3 id="colorText">Color Changing Text</h3>
     <button onclick="changeColor('blue')" class="blue">Change Color to Blue</button>
-    <button onclick="changeColor('purple')" class="purple">Change Color to Purple</button>
+    <button onclick="changeColor('green')" class="green">Change Color to Purple</button>
     <button onclick="changeColor('orange')" class="orange">Change Color to Orange</button>
     <script> 
         const name = document.querySelector("#colorText");
         function changeColor(color){
         name.style.color = color;
         }
-    </script>
+    </script> -->
+
 </div>
 
 

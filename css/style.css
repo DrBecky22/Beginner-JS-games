@@ -19,39 +19,28 @@ p, h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* fonts for later
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Slab', serif;    
-*/
-
-#colorButtonTestArea {
-    margin: 10px;
+#snuffy-section-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#colorText {
-    color: green;
-    padding-bottom: 25px;
-}
-
-
-button.blue {
-    background-color: blue;
-}
-
-button.purple {
-    background-color: purple;
-}
-
-button.orange {
-    background-color: orange;
+.snuffy {
+    height: 30vh;
+    width: 30vh;
+    position: relative;
+    margin:auto;
 }
 
 .card-section {
-    padding: 3% 10% 7%;
+    padding: 2% 5% 7%;
 }
 
 .card-section-heading {
     padding: 3% 10%;
+}
+
+.card-title {
+    font-weight:bolder;
 }
 
 .card {
@@ -61,7 +50,21 @@ button.orange {
     box-shadow: 3px 5px 8px rgb(106, 106, 201);
 }
 
-/* .card-header-title {} */
+/******************snuffy cards *******************/
+#snuffyPicStart {
+    transition-duration: 3s;
+    height: 85%;
+}
+
+.rotate-clock {
+    transform: rotate(360deg);
+}
+
+.rotate-widd {
+    transform: rotate(-360deg);
+}
+
+/********** .card-header-title {} ***********/
 
 .card-header-img {
     width: 100%;
@@ -71,6 +74,33 @@ button.orange {
 .btn {
     box-shadow: 2px 3px 5px rgb(106, 106, 201);
 }
+
+
+#colorButtonTestArea {
+    margin: 10px;
+}
+
+#colorText {
+    padding-bottom: 25px;
+}
+
+
+button.blue {
+    background-color: deepskyblue;
+    margin-right: 20px;
+}
+
+button.green {
+    background-color: limegreen;
+    color: white;
+}
+
+button.orange {
+    background-color: orange;
+    margin-left: 20px;
+}
+
+
 
 .container-3 {
     height: 300px;
